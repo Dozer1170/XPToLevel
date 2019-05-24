@@ -15,7 +15,7 @@ xpEventFrame:SetScript("OnEvent", function(self, event, ...)
     local maxXp = UnitXPMax(arg1)
     local xpToLevel = maxXp - playerXp
     if playerXp ~= lastPlayerXp then
-        print(comma_value(xpToLevel)..'xp left')
+        print(comma_value(xpToLevel)..' xp left')
     end
     lastPlayerXp = playerXp
 end)
