@@ -1,6 +1,6 @@
 ## Interface: 11302
 ## Version: 1
 ## Author: Dozer
-## Notes: Tells you how many kills and xp left to level after you get xp
+## Notes: Tells you amount of xp left to level after you get xp
 
 XPToLevel.lua
