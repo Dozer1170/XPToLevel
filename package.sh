@@ -1,13 +1,13 @@
 #!/bin/sh
 
 mkdir tmp
-mkdir tmp/XpToLevel
-cp *.lua tmp/XpToLevel
-cp *.toc tmp/XpToLevel
+mkdir tmp/XPToLevel
+cp *.lua tmp/XPToLevel
+cp *.toc tmp/XPToLevel
 
 cd tmp
 
-zip ../XPToLevel$1.zip XpToLevel XpToLevel/*.toc XpToLevel/*.lua
+zip ../XPToLevel$1.zip XPToLevel XPToLevel/*.toc XPToLevel/*.lua
 
 cd ..
 
