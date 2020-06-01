@@ -1,5 +1,5 @@
-## Interface: 11302
-## Version: 1
+## Interface: 11304
+## Version: 3
 ## Author: Dozer
 ## Notes: Tells you amount of xp left to level after you get xp
 
