@@ -6,7 +6,7 @@
 local xpEventFrame = CreateFrame("Frame")
 
 xpEventFrame:RegisterEvent("PLAYER_XP_UPDATE")
-xpEventFrame:RegisterEvent("ADDON_LOADED")
+xpEventFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 local lastPlayerXp = 0
 local killCount = 0
@@ -15,9 +15,9 @@ local estKillsToGo = 0
 xpEventFrame:SetScript("OnEvent", function(self, event, ...)
     local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9 = ...
 
-    if (event == "ADDON_LOADED" and arg1 == "XPToLevel") then
+    if (event == "PLAYER_ENTERING_WORLD") then
         lastPlayerXp = UnitXP("player")
-        print('XpToLevel loaded'..comma_value(lastPlayerXp))
+        print('XpToLevel loaded with intial xp: '..comma_value(lastPlayerXp))
     end
 
     if (event == "PLAYER_XP_UPDATE") then
