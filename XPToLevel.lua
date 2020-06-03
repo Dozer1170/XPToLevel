@@ -37,7 +37,7 @@ xpEventFrame:SetScript("OnEvent", function(self, event, ...)
 end)
 
 function printXpToLevel(xpToLevel)
-    print(comma_value(xpToLevel)..' xp left. ~'..estKillsToGo..' kills to level. Killount: '..comma_value(killCount))
+    print(comma_value(xpToLevel)..' xp left. ~'..estKillsToGo..' kills to level. Kill count: '..comma_value(killCount))
 end
 
 function comma_value(amount)
